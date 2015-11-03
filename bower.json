@@ -1,0 +1,26 @@
+{
+  "name": "dkuz.github.io",
+  "homepage": "https://github.com/dkuz/dkuz.github.io",
+  "description": "Personal Website",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "dylan",
+    "kuzelka"
+  ],
+  "authors": [
+    "Dylan Kuzelka <dkuz001@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
