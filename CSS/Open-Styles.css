@@ -1,0 +1,62 @@
+@import url(../Fonts/font-styles.css);
+* {
+  margin: 0px;
+  padding: 0px; }
+
+html, body {
+  height: 100%; }
+
+.stack-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .stack-wrapper .stack-overlay {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .stack-wrapper .stack-overlay .left-content {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: column wrap; }
+    .stack-wrapper .stack-overlay .right-content {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: column wrap; }
+  .stack-wrapper .stack-surface {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+    .stack-wrapper .stack-surface .center-content {
+      width: 980px; }
+
+body {
+  width: 100%;
+  height: 100%; }
+  body #top {
+    display: flex;
+    justify-content: space-between; }
+    body #top #left-tri {
+      display: none;
+      width: 0;
+      height: 0;
+      border-bottom: 100vh solid #091b1c;
+      border-right: 50vw solid transparent; }
+    body #top #right-tri {
+      display: none;
+      width: 0;
+      height: 0;
+      border-bottom: 100vh solid #091b1c;
+      border-left: 50vw solid transparent; }
+  @media screen and (min-width: 1500px) and (min-height: 10px) {
+    body #left-tri {
+      display: flex; }
+    body #right-tri {
+      display: flex; } }
+
+/*# sourceMappingURL=Open-Styles.css.map */
