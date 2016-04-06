@@ -1,14 +1,16 @@
 jQuery(document).ready(function($){
+  var sliderLock = false;
 
   function move(newIndex, elems) {
     var animateLeft, slideLeft;
     var slideAmount;
-    
-    if (elems.slider.is(':animated')) {
-    	//return;
+
+    if (sliderLock) {
+      return;
     }
+
     if (elems.slider.data('index') === newIndex) {
-    	return;
+      return;
     }
     
     if (elems.id === 'shots'){
@@ -18,24 +20,24 @@ jQuery(document).ready(function($){
     }
 
     if (newIndex > elems.slider.data('index')) {
-    	if (elems.toBack){
-	      slideLeft = ("-"+slideAmount);
-	      animateLeft = (slideAmount);
-    	} else {
-	      slideLeft = (slideAmount);
-	      animateLeft = ("-"+slideAmount);
-    	}
+      if (elems.toBack){
+        slideLeft = ("-"+slideAmount);
+        animateLeft = (slideAmount);
+      } else {
+        slideLeft = (slideAmount);
+        animateLeft = ("-"+slideAmount);
+      }
     } else {
-    	if (elems.toFirst) {
-	      slideLeft = (slideAmount);
-	      animateLeft = ("-"+slideAmount);
-    	} else {
-	      slideLeft = ("-"+slideAmount);
-	      animateLeft = (slideAmount);
-    	}
+      if (elems.toFirst) {
+        slideLeft = (slideAmount);
+        animateLeft = ("-"+slideAmount);
+      } else {
+        slideLeft = ("-"+slideAmount);
+        animateLeft = (slideAmount);
+      }
     }
     
-
+    sliderLock = true;
     if (elems.id != 'shots') {
       elems.slides.eq(newIndex).css({
         display: 'block',
@@ -44,6 +46,7 @@ jQuery(document).ready(function($){
       elems.slider.animate({
         left: (animateLeft)
       }, function() {
+        sliderLock = false;
         elems.slides.eq(elems.slider.data('index')).css({
           display: 'none'
         });
@@ -65,6 +68,7 @@ jQuery(document).ready(function($){
         elems.slider.animate({
           left: (animateLeft)
         }, function() {
+          sliderLock = false;
           elems.slides.css({
             left: 0
           });
@@ -77,6 +81,7 @@ jQuery(document).ready(function($){
         elems.slider.animate({
           left: (animateLeft)
         }, function() {
+          sliderLock = false;
           elems.slides.eq(elems.slider.data('index')).appendTo(elems.slider);
           elems.slider.css({
             left: 0
@@ -92,76 +97,52 @@ jQuery(document).ready(function($){
   
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   $('.next_btn').on('click', function() {
-  	var $cur_id = $(this).attr('id');
-  	var $cur_slider = $('div#' + $cur_id +'.slider');
-  	var $cur_slides = $cur_slider.find('.stack-wrapper');
+    var $cur_id = $(this).attr('id');
+    var $cur_slider = $('div#' + $cur_id +'.slider');
+    var $cur_slides = $cur_slider.find('.stack-wrapper');
 
     if ($cur_slider.data('index') < ($cur_slides.length - 1)) {
       move($cur_slider.data('index') + 1, {
-      	id: $cur_id,
-      	slider: $cur_slider,
-      	slides: $cur_slides,
-      	toFirst: false,
-      	toBack: false,
+        id: $cur_id,
+        slider: $cur_slider,
+        slides: $cur_slides,
+        toFirst: false,
+        toBack: false,
       });
     } else {
-		move(0, {
-	      	id: $cur_id,
-	      	slider: $cur_slider,
-	      	slides: $cur_slides,
-	      	toFirst: true,
-	      	toBack: false,
-	    });
+    move(0, {
+          id: $cur_id,
+          slider: $cur_slider,
+          slides: $cur_slides,
+          toFirst: true,
+          toBack: false,
+      });
     }
   });
   
   $('.previous_btn').on('click', function() {
-  	var $cur_id = $(this).attr('id');
-  	var $cur_slider = $('div#' + $cur_id +'.slider');
-  	var $cur_slides = $cur_slider.find('.stack-wrapper');
+    var $cur_id = $(this).attr('id');
+    var $cur_slider = $('div#' + $cur_id +'.slider');
+    var $cur_slides = $cur_slider.find('.stack-wrapper');
 
     if ($cur_slider.data('index') !== 0) {
       move($cur_slider.data('index') - 1, {
-      	id: $cur_id,
-      	slider: $cur_slider,
-      	slides: $cur_slides,
-      	toFirst: false,
-      	toBack: false,
+        id: $cur_id,
+        slider: $cur_slider,
+        slides: $cur_slides,
+        toFirst: false,
+        toBack: false,
       });
     } else {
       move($cur_slides.length - 1, {
-      	id: $cur_id,
-      	slider: $cur_slider,
-      	slides: $cur_slides,
-      	toFirst: false,
-      	toBack: true
+        id: $cur_id,
+        slider: $cur_slider,
+        slides: $cur_slides,
+        toFirst: false,
+        toBack: true
       }); // go to last slide
     }
   });
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 });
