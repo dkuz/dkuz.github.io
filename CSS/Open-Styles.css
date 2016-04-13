@@ -11,11 +11,16 @@ html, body {
   height: 100%;
   display: flex;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .stack-wrapper .stack-overlay {
     display: flex;
     justify-content: space-between;
-    width: 100%; }
+    width: 100%;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    align-items: center; }
     .stack-wrapper .stack-overlay .left-content {
       display: flex;
       justify-content: space-between;
@@ -25,6 +30,7 @@ html, body {
       justify-content: space-between;
       flex-flow: column wrap; }
   .stack-wrapper .stack-surface {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -33,7 +39,8 @@ html, body {
     height: 100%;
     width: 100%; }
     .stack-wrapper .stack-surface .center-content {
-      width: 980px; }
+      width: 980px;
+      display: flex; }
 
 body {
   width: 100%;

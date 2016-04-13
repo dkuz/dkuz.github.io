@@ -16,6 +16,7 @@ html {
 
 	.stack-overlay {
 		padding: 20px;
+		align-items: initial;
 		$sides: 25%;
 		.left-content {
 			width: $sides;
@@ -35,7 +36,6 @@ html {
 	.stack-surface {
 		.center-content {
 			height: 100%;
-			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -85,11 +85,6 @@ html {
 	#zoo-slide-1.stack-wrapper {
 		background: #e99527;
 		.stack-overlay {
-			top: 50%;
-			position: relative;
-			transform: translateY(-50%);
-			align-items: center;
-
 			.left-content {
 				width: $zoo-sides;
 				display: flex;
@@ -105,7 +100,6 @@ html {
 		}
 		.stack-surface {
 			.center-content {
-				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				padding-top: 100px;
@@ -132,11 +126,6 @@ html {
 	#zoo-slide-2.stack-wrapper {
 		background: #e5ab44;
 		.stack-overlay {
-			top: 50%;
-			position: relative;
-			transform: translateY(-50%);
-			align-items: center;
-
 			.left-content {
 				div {
 					position: absolute;
@@ -155,7 +144,6 @@ html {
 		}
 		.stack-surface {
 			.center-content {
-				display:flex;
 				justify-content:center;
 				align-items: center;
 				width:100%;
@@ -171,9 +159,7 @@ html {
 	#zoo-slide-3.stack-wrapper {
 		background: #e5ab44;
 		.stack-overlay {
-			top: 50%;
-			position: relative;
-			transform: translateY(-50%);
+			// VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 			justify-content: flex-end;
 
 			.right-content {
@@ -185,7 +171,6 @@ html {
 		}
 		.stack-surface {
 			.center-content {
-				display:flex;
 				justify-content:center;
 				align-items: center;
 				width:100%;
@@ -201,22 +186,17 @@ html {
 	#zoo-slide-4.stack-wrapper {
 		background: #e99527;
 		.stack-overlay {
-			top: 50%;
-			position: relative;
-			transform: translateY(-50%);
-			align-items: center;
+			// VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 			justify-content: flex-end;
 
 			.right-content {
 				width: $zoo-sides; 
-				display: flex;
 
 				img { width: 100%; }
 			}
 		}
 		.stack-surface {
 			.center-content {
-				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				padding-top: 100px;
@@ -252,7 +232,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				padding-top: 100px;
@@ -280,7 +259,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				padding-top: 100px;
@@ -310,7 +288,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				padding-top: 100px;
@@ -344,7 +321,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				display:flex;
 				justify-content:center;
 				align-items: center;
 				width:100%;
@@ -362,7 +338,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				display:flex;
 				justify-content:center;
 				align-items: center;
 				width:100%;
@@ -379,7 +354,6 @@ html {
 		
 		.stack-surface {
 			.center-content {
-				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				padding-top: 100px;
@@ -414,7 +388,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				padding-top: 100px;
@@ -442,7 +415,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				padding-top: 100px;
@@ -479,9 +451,8 @@ html {
 		background-size: cover;
 
 		.stack-surface {
-			overflow: hidden;
+			
 			.center-content {
-				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				padding-top: 100px;
@@ -510,9 +481,8 @@ html {
 		background: #053371;
 
 		.stack-surface {
-			overflow: hidden;
+			
 			.center-content {
-				display:flex;
 				justify-content:center;
 				align-items: center;
 				width:100%;
@@ -529,9 +499,8 @@ html {
 		background: #084eb1;
 
 		.stack-surface {
-			overflow: hidden;
+			
 			.center-content {
-				display:flex;
 				justify-content:center;
 				align-items: center;
 				width:100%;
@@ -548,9 +517,8 @@ html {
 		background: #0a6cf1;
 
 		.stack-surface {
-			overflow: hidden;
+			
 			.center-content {
-				display:flex;
 				justify-content:center;
 				align-items: center;
 				width:100%;
@@ -566,10 +534,7 @@ html {
 	#amoeba-slide-7.stack-wrapper {
 		background: #0a6cf1;
 		.stack-overlay {
-			top: 50%;
-			position: relative;
-			transform: translateY(-50%);
-			align-items: center;
+			// VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 			justify-content: flex-end;
 
 			.right-content {
@@ -581,7 +546,6 @@ html {
 		}
 		.stack-surface {
 			.center-content {
-				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
 				padding-top: 100px;
@@ -610,7 +574,7 @@ html {
 //###################################################################################
 #shots.slider-wrapper {
 	position: relative;
-	overflow: hidden;
+	
 
 	#shots.slider {
 		// max-width:100%;

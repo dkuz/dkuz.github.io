@@ -15,11 +15,16 @@ html, body {
 	display: flex;
 	justify-content: center;
 	position: relative;
+	overflow: hidden;
 
 	.stack-overlay {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+		top: 50%;
+		position: relative;
+		transform: translateY(-50%);
+		align-items: center;
 
 		.left-content {
 			display: flex; 
@@ -34,6 +39,7 @@ html, body {
 
 	}
 	.stack-surface {
+		overflow: hidden;
 		display: flex;
 		justify-content: center;
 		position: absolute;
@@ -44,6 +50,10 @@ html, body {
 
 		.center-content {
 			width:980px;
+			display:flex;
+			//justify-content:center; // zoo-slide-(1,2,3)
+			//align-items: center;
+			//width:100%;
 		}
 	}
 }
