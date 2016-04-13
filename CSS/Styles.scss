@@ -20,7 +20,6 @@ html {
 		$sides: 25%;
 		.left-content {
 			width: $sides;
-			img { width: 100%; }
 			.fill-rest { background: $head-stack; flex: auto;}
 		}
 		.center-content {
@@ -29,7 +28,6 @@ html {
 		}
 		.right-content {
 			width: $sides; 
-			img { width: 100%; }
 			.fill-rest { background: $head-stack; flex: auto;}
 		}
 	}
@@ -87,24 +85,13 @@ html {
 		.stack-overlay {
 			.left-content {
 				width: $zoo-sides;
-				display: flex;
-
-				img { width: 100%; }
 			}
 			.right-content {
 				width: $zoo-sides; 
-				display: flex;
-
-				img { width: 100%; }
 			}
 		}
 		.stack-surface {
 			.center-content {
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				padding-left:30px;
 				.top {
 					h3 { font-size:42px; font-family:'Avn-Heavy'; color: #fff; font-weight:normal; }
 				}
@@ -132,7 +119,6 @@ html {
 					top: 50%;
 					transform: translateY(-50%);
 				}
-				display: flex;
 				#zoo-slide-2-leftunder {
 					img { width: 100%; margin-top:6px; }
 				}
@@ -144,9 +130,6 @@ html {
 		}
 		.stack-surface {
 			.center-content {
-				justify-content:center;
-				align-items: center;
-				width:100%;
 				img {
 					width:100%;
 					min-width:1000px;
@@ -159,21 +142,10 @@ html {
 	#zoo-slide-3.stack-wrapper {
 		background: #e5ab44;
 		.stack-overlay {
-			// VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 			justify-content: flex-end;
-
-			.right-content {
-				display: flex;
-				#zoo-slide-3-rightunder {
-					img { width: 100%; margin-top:6px; }
-				}
-			}
 		}
 		.stack-surface {
 			.center-content {
-				justify-content:center;
-				align-items: center;
-				width:100%;
 				img {
 					width:100%;
 					min-width:1000px;
@@ -186,22 +158,14 @@ html {
 	#zoo-slide-4.stack-wrapper {
 		background: #e99527;
 		.stack-overlay {
-			// VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 			justify-content: flex-end;
 
 			.right-content {
 				width: $zoo-sides; 
-
-				img { width: 100%; }
 			}
 		}
 		.stack-surface {
 			.center-content {
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				padding-left:30px;
 				.top {
 					h2 { font-size:45px; font-family:'Avn-Ultralight'; color: #582e2b; font-weight:normal; }
 				}
@@ -224,7 +188,6 @@ html {
 
 //###################################################################################
 #project-offhand.slider {
-	// font-family:'';
 	height:700px;
 
 	#offhand-slide-1.stack-wrapper {
@@ -232,11 +195,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				padding-left:30px;
 				.top {
 					img { max-width: 190px; }
 				}
@@ -259,11 +217,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				padding-left:30px;
 				.top {
 					h2 { font-size: 45px; font-family:'source_sans_proextralight'; color: #62c5b9; font-weight:normal; }
 				}
@@ -288,11 +241,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				padding-left:30px;
 				.top {
 					h2 { font-size: 45px; font-family:'source_sans_proextralight'; color: #5959ad; font-weight:normal; }
 				}
@@ -321,9 +269,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				justify-content:center;
-				align-items: center;
-				width:100%;
 				img {
 					width:100%;
 					min-width:1000px;
@@ -338,9 +283,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				justify-content:center;
-				align-items: center;
-				width:100%;
 				img {
 					min-width:1431px;
 					margin-bottom:-20px;
@@ -354,11 +296,6 @@ html {
 		
 		.stack-surface {
 			.center-content {
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				padding-left:30px;
 				.top {
 					h2 { font-size:45px; font-family:'source_sans_proextralight'; color: #fbba6c; font-weight:normal; }
 				}
@@ -380,7 +317,6 @@ html {
 
 //###################################################################################
 #project-amoeba.slider {
-	// font-family:'';
 	height:700px;
 
 	#amoeba-slide-1.stack-wrapper {
@@ -388,11 +324,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				padding-left:30px;
 				.top {
 					img { max-width: 190px; }
 				}
@@ -415,11 +346,6 @@ html {
 
 		.stack-surface {
 			.center-content {
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				padding-left:30px;
 				.top {
 					h2 { font-size: 48px; font-family:'alegreya_sansthin'; color: #e7f5f9; font-weight:normal; }
 				}
@@ -451,13 +377,7 @@ html {
 		background-size: cover;
 
 		.stack-surface {
-			
 			.center-content {
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				padding-left:30px;
 				.top {
 					h2 { font-size: 48px; font-family:'alegreya_sansthin'; color: #e7f5f9; font-weight:normal; }
 				}
@@ -481,11 +401,7 @@ html {
 		background: #053371;
 
 		.stack-surface {
-			
 			.center-content {
-				justify-content:center;
-				align-items: center;
-				width:100%;
 				img {
 					min-width: 1205px;
 				    max-width: 1205px;
@@ -499,11 +415,7 @@ html {
 		background: #084eb1;
 
 		.stack-surface {
-			
 			.center-content {
-				justify-content:center;
-				align-items: center;
-				width:100%;
 				img {
 					width:100%;
 					min-width:1000px;
@@ -517,11 +429,7 @@ html {
 		background: #0a6cf1;
 
 		.stack-surface {
-			
 			.center-content {
-				justify-content:center;
-				align-items: center;
-				width:100%;
 				img {
 					width:100%;
 					min-width:1000px;
@@ -533,24 +441,12 @@ html {
 
 	#amoeba-slide-7.stack-wrapper {
 		background: #0a6cf1;
+		
 		.stack-overlay {
-			// VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 			justify-content: flex-end;
-
-			.right-content {
-				height: 100%; 
-				display: flex;
-
-				img { width: 100%;  }
-			}
 		}
 		.stack-surface {
 			.center-content {
-				flex-flow: column nowrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				padding-left:30px;
 				.top {
 					h2 { font-size:48px; font-family:'alegreya_sansthin'; color: #e7f5f9; font-weight:normal; }
 				}
@@ -574,10 +470,8 @@ html {
 //###################################################################################
 #shots.slider-wrapper {
 	position: relative;
-	
 
 	#shots.slider {
-		// max-width:100%;
 		position: relative;
 		height:100%;
 	    white-space: nowrap;

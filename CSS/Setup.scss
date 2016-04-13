@@ -32,11 +32,19 @@ html, body {
 			display: flex; 
 			justify-content: space-between;
 			flex-flow: column wrap;
+
+			img { 
+				width: 100%;
+			}
 		}
 		.right-content {
 			display: flex; 
 			justify-content: space-between;
 			flex-flow: column wrap;
+
+			img { 
+				width: 100%;
+			}
 		}
 
 	}
@@ -51,11 +59,19 @@ html, body {
 		width: 100%;
 
 		.center-content {
-			width:980px;
+			width:100%;
 			display:flex;
-			//justify-content:center; // zoo-slide-(1,2,3)
-			//align-items: center;
-			//width:100%;
+			flex-flow: column nowrap;
+			justify-content:center;
+			align-items: center;
+			&.text-content {
+				align-items: initial;
+				width:980px;
+				justify-content: space-between;
+				padding-top: 100px;
+				padding-bottom: 100px;
+				padding-left:30px;
+			}
 		}
 	}
 }

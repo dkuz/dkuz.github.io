@@ -28,10 +28,14 @@ html, body {
       display: flex;
       justify-content: space-between;
       flex-flow: column wrap; }
+      .stack-wrapper .stack-overlay .left-content img {
+        width: 100%; }
     .stack-wrapper .stack-overlay .right-content {
       display: flex;
       justify-content: space-between;
       flex-flow: column wrap; }
+      .stack-wrapper .stack-overlay .right-content img {
+        width: 100%; }
   .stack-wrapper .stack-surface {
     overflow: hidden;
     display: flex;
@@ -42,8 +46,18 @@ html, body {
     height: 100%;
     width: 100%; }
     .stack-wrapper .stack-surface .center-content {
-      width: 980px;
-      display: flex; }
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center; }
+      .stack-wrapper .stack-surface .center-content.text-content {
+        align-items: initial;
+        width: 980px;
+        justify-content: space-between;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 30px; }
 
 body {
   width: 100%;
