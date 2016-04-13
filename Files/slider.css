@@ -22,7 +22,7 @@
     height: 100%; }
     .slider-wrapper .directional_nav [class*="_btn"] {
       cursor: pointer;
-      width: 20%;
+      width: 25%;
       height: 100%;
       background: transparent;
       display: flex;
@@ -46,7 +46,7 @@
           border: 4px solid #000;
           position: absolute;
           width: 25px;
-          top: -8px;
+          top: -9px;
           border-radius: 2px;
           right: 13px;
           transform: rotate(-45deg); }
@@ -64,7 +64,7 @@
           border: 4px solid #000;
           position: absolute;
           width: 25px;
-          top: -8px;
+          top: -9px;
           border-radius: 2px;
           right: -4px;
           transform: rotate(45deg); }
@@ -79,5 +79,23 @@
           border-radius: 2px; }
     .slider-wrapper .directional_nav .next_btn {
       justify-content: flex-end; }
+    .slider-wrapper .directional_nav .previous_btn.never-clicked {
+      width: 42%; }
+      .slider-wrapper .directional_nav .previous_btn.never-clicked:hover {
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0.8)), color-stop(75%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+        background: -o-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+        background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%); }
+    .slider-wrapper .directional_nav .next_btn.never-clicked {
+      width: 42%; }
+      .slider-wrapper .directional_nav .next_btn.never-clicked:hover {
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.8) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0.8)));
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.8) 100%);
+        background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.8) 100%);
+        background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.8) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.8) 100%); }
 
 /*# sourceMappingURL=slider.css.map */
