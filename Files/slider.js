@@ -62,7 +62,7 @@ jQuery(document).ready(function($){
       if(elems.toBack){
         elems.slides.eq(elems.slides.length-1).prependTo(elems.slider);
         elems.slides.css({
-          display: 'inline-block',
+          display: 'inherit',
           left: slideLeft
         });
         elems.slider.animate({

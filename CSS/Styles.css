@@ -520,7 +520,7 @@ html {
     #shots.slider-wrapper #shots.slider .stack-wrapper {
       position: inherit;
       z-index: -1;
-      display: inline-block;
+      display: inherit;
       width: 33.3333%; }
       #shots.slider-wrapper #shots.slider .stack-wrapper img {
         margin-bottom: -4px;
