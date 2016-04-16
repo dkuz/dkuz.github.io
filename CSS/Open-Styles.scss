@@ -1,7 +1,7 @@
 @import 'Setup';
 
 html {
-	//background: #182023;
+	background: #091b1c;
 }
 
 body {
@@ -34,40 +34,94 @@ body {
 			width:50%;
 			height:inherit;
 			background: #cdeef4;
+
+			#left-triangle-link{
+				-webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+				width: 100%;
+				height: 100%;
+				z-index: 100;
+				position: relative;
+				cursor: pointer;
+			}
+
+			#left-tri {
+				width: 0;
+				height: 0;
+				border-bottom: 100vh solid transparent;
+				border-right: 50vw solid transparent;
+				background: #fff;
+				background-image: url('../Files/Design/Photos/Art-Pattern.png');
+				background-repeat: repeat;
+				position: absolute;
+				top: 0;
+			}
+
+			#left-tri-2 {
+				-webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+				width: 50%;
+				height: 100%;
+				// z-index: 1;
+				position: absolute;
+				top: 0;
+				background: rgba(190,30,46,0.2);
+				background: -moz-linear-gradient(45deg, rgba(190,30,46,0.2) 0%, rgba(46,49,146,0.24) 35%, rgba(41,66,157,0.25) 50%, rgba(28,87,188,0.28) 81%, rgba(28,87,188,0.3) 100%);
+				background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(190,30,46,0.2)), color-stop(35%, rgba(46,49,146,0.24)), color-stop(50%, rgba(41,66,157,0.25)), color-stop(81%, rgba(28,87,188,0.28)), color-stop(100%, rgba(28,87,188,0.3)));
+				background: -webkit-linear-gradient(45deg, rgba(190,30,46,0.2) 0%, rgba(46,49,146,0.24) 35%, rgba(41,66,157,0.25) 50%, rgba(28,87,188,0.28) 81%, rgba(28,87,188,0.3) 100%);
+				background: -o-linear-gradient(45deg, rgba(190,30,46,0.2) 0%, rgba(46,49,146,0.24) 35%, rgba(41,66,157,0.25) 50%, rgba(28,87,188,0.28) 81%, rgba(28,87,188,0.3) 100%);
+				background: -ms-linear-gradient(45deg, rgba(190,30,46,0.2) 0%, rgba(46,49,146,0.24) 35%, rgba(41,66,157,0.25) 50%, rgba(28,87,188,0.28) 81%, rgba(28,87,188,0.3) 100%);
+				background: linear-gradient(45deg, rgba(190,30,46,0.2) 0%, rgba(46,49,146,0.24) 35%, rgba(41,66,157,0.25) 50%, rgba(28,87,188,0.28) 81%, rgba(28,87,188,0.3) 100%);
+			}
+
+			#art-logo {
+				position: absolute;
+				bottom: 16%;
+				left: 9%;
+				max-width: 240px;
+			}
 		}
 
 		#right-side {
 			width:50%;
 			height:inherit;
-			background: #bcde33;
+			background: #648d86;
+
+			#right-triangle-link{
+				-webkit-clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+				clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+				width: 100%;
+				height: 100%;
+				z-index: 100;
+				position: relative;
+				cursor: pointer;
+			}
+
+			#right-tri {
+				width: 0;
+				height: 0;
+				border-bottom: 100vh solid transparent;
+				border-left: 50vw solid transparent;
+				position: absolute;
+				top: 0;
+				background-image: url('../Files/Design/Photos/Background_Kaleidoscope.png');
+			}
+			#right-tri-2 {
+				width: 0;
+				height: 0;
+				border-bottom: 90.5vh solid #d9edeb;
+				border-left: 45.25vw solid transparent;
+				position: absolute;
+				bottom:2.25vh;
+				right:1.5vw;
+			}
+			#design-logo {
+				position: absolute;
+				bottom: 16%;
+				right: 9%;
+				max-width: 220px;
+			}
 		}
 
-		#left-tri {
-			width: 0;
-			height: 0;
-			border-bottom: 100vh solid transparent;
-			border-right: 50vw solid transparent;
-			background: #f91b1c;
-		}
-
-		#right-tri {
-			width: 0;
-			height: 0;
-			border-bottom: 100vh solid transparent;
-			border-left: 50vw solid transparent;
-			position: absolute;
-			top: 0;
-			background-image: url('../Files/Design/Photos/Background_Kaleidoscope.png');
-		}
-		#right-tri-2 {
-			width: 0;
-			height: 0;
-			border-bottom: 90.5vh solid #d9edeb;
-			border-left: 45.25vw solid transparent;
-			position: absolute;
-			bottom:2.25vh;
-			right:1.5vw;
-		}
+		
 
 
 	}

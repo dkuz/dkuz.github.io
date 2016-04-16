@@ -499,6 +499,45 @@ html {
 			h1 {
 				color: #fff;
 			}
+
+			.contact-form {
+				width: 600px;
+				padding:20px;
+				// background:#abcdef;
+
+				.field-container {
+					margin-bottom:20px;
+					width: 100%;
+					::-webkit-input-placeholder { color: #1a2326; }
+					:-moz-placeholder { color: #202c30; }
+					:-ms-placeholder { color: #202c30; }
+
+					.input {
+						width: 100%;
+						margin: 0;
+						padding: 13px;
+						border: none;
+						background: #273638;
+						font-size: 25px;
+						color: #fff;
+					}
+				}
+
+				.send-button {
+					input[type=submit] {
+						display: block;
+						background: #55c958;
+						border: none;
+						color: #fff;
+						font-size: 23px;
+						padding: 10px 15px;
+						-webkit-border-radius: 4px;
+						-moz-border-radius: 4px;
+						border-radius: 4px;
+						cursor: pointer;
+					}
+				}
+			}
 		}
 	}
 }
