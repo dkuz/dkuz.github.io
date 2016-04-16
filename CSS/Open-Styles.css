@@ -153,7 +153,7 @@ body {
       right: 0; }
     body #top #intro-p {
       position: absolute;
-      top: 20%;
+      top: 19%;
       left: 50%;
       color: white;
       transform: translateX(-50%);
