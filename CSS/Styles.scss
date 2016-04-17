@@ -493,17 +493,27 @@ html {
 
 //###################################################################################
 #footer.stack-wrapper {
-	height: 500px;
+	height: 600px;
+
 	.stack-surface {
 		.center-content {
 			h1 {
 				color: #fff;
+				font-family:'butlerblack';
 			}
 
 			.contact-form {
-				width: 600px;
+				width: 700px;
 				padding:20px;
 				// background:#abcdef;
+
+				#text-top {
+					display: flex;
+					justify-content: space-between;
+					.field-container {
+						width: 46.5%;
+					}
+				}
 
 				.field-container {
 					margin-bottom:20px;
@@ -511,6 +521,7 @@ html {
 					::-webkit-input-placeholder { color: #1a2326; }
 					:-moz-placeholder { color: #202c30; }
 					:-ms-placeholder { color: #202c30; }
+
 
 					.input {
 						width: 100%;
@@ -520,6 +531,13 @@ html {
 						background: #273638;
 						font-size: 25px;
 						color: #fff;
+						font-family:'CasRegular';
+					}
+
+
+					textarea {
+						resize: none;
+						height: 225px;
 					}
 				}
 
@@ -535,6 +553,7 @@ html {
 						-moz-border-radius: 4px;
 						border-radius: 4px;
 						cursor: pointer;
+						font-family:'CasRegular';
 					}
 				}
 			}
