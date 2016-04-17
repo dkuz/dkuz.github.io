@@ -63,6 +63,19 @@ body {
 				left: 9%;
 				max-width: 240px;
 			}
+
+			#left-text {
+				-ms-transform: rotate(90deg);
+				-webkit-transform: rotate(90deg);
+				transform: rotate(90deg);
+				background: #091b1c;
+				color: #fff;
+				display: block;
+				position: absolute;
+				top: 38%;
+				left: -21px;
+				h3 { padding: 15px; font-family: 'signikalight'; font-weight: normal; font-size: 35px; }
+			}
 		}
 
 		#right-side {
@@ -103,6 +116,18 @@ body {
 				bottom: 16%;
 				right: 9%;
 				max-width: 220px;
+			}
+			#right-text {
+				-ms-transform: rotate(-90deg);
+				-webkit-transform: rotate(-90deg);
+				transform: rotate(-90deg);
+				background: #091b1c;
+				color: #fff;
+				display: block;
+				position: absolute;
+				top: 37%;
+				right: -46px;
+				h3 { padding: 15px; font-family: 'signikalight'; font-weight: normal; font-size: 35px; }
 			}
 		}
 

@@ -109,6 +109,21 @@ body {
         bottom: 16%;
         left: 9%;
         max-width: 240px; }
+      body #top #left-side #left-text {
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        background: #091b1c;
+        color: #fff;
+        display: block;
+        position: absolute;
+        top: 38%;
+        left: -21px; }
+        body #top #left-side #left-text h3 {
+          padding: 15px;
+          font-family: 'signikalight';
+          font-weight: normal;
+          font-size: 35px; }
     body #top #right-side {
       width: 50%;
       height: inherit;
@@ -142,6 +157,21 @@ body {
         bottom: 16%;
         right: 9%;
         max-width: 220px; }
+      body #top #right-side #right-text {
+        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        background: #091b1c;
+        color: #fff;
+        display: block;
+        position: absolute;
+        top: 37%;
+        right: -46px; }
+        body #top #right-side #right-text h3 {
+          padding: 15px;
+          font-family: 'signikalight';
+          font-weight: normal;
+          font-size: 35px; }
     body #top #middle-triangle {
       width: 0;
       height: 0;
