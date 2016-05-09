@@ -60,72 +60,45 @@ html, body {
         padding-left: 30px; }
 
 html {
-  background: #182023; }
+  background: #000; }
 
-#head-stack {
-  background-image: url("../Files/Design/Photos/Background_Kaleidoscope.png");
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-position: center;
+#head-stack.stack-wrapper {
   height: 700px; }
-  #head-stack .stack-overlay {
-    padding: 20px;
-    align-items: initial; }
-    #head-stack .stack-overlay .left-content {
-      width: 25%; }
-      #head-stack .stack-overlay .left-content .fill-rest {
-        background: #d9edeb;
-        flex: auto; }
-    #head-stack .stack-overlay .center-content {
-      background: #d9edeb;
-      flex: auto; }
-    #head-stack .stack-overlay .right-content {
-      width: 25%; }
-      #head-stack .stack-overlay .right-content .fill-rest {
-        background: #d9edeb;
-        flex: auto; }
-  #head-stack .stack-surface .center-content {
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -30px; }
-    #head-stack .stack-surface .center-content h1 {
-      color: #182023;
-      margin-top: -10px;
-      font-size: 68px;
-      font-family: 'butlerblack'; }
-    #head-stack .stack-surface .center-content p {
-      color: #182023;
-      font-size: 20px;
-      font-family: 'CasRegular';
-      text-align: center;
-      max-width: 610px;
-      margin-top: 8px;
-      padding-bottom: 31px; }
-    #head-stack .stack-surface .center-content hr {
-      border: none;
-      background: #182023;
-      height: 4px;
-      width: 150px; }
-    #head-stack .stack-surface .center-content img {
-      width: 100px;
+  #head-stack.stack-wrapper .stack-overlay {
+    background: #fff;
+    justify-content: flex-end; }
+    #head-stack.stack-wrapper .stack-overlay #head-stack-top {
+      background-image: url("../Files/Design/Photos/head-stack-top.png");
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 7px;
       position: absolute;
-      bottom: 20px;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    #head-stack .stack-surface .center-content #triangle {
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-top: 14px solid #d9edeb;
-      position: absolute;
-      bottom: 7px;
-      left: 0;
-      right: 0;
-      margin: auto; }
+      top: 0;
+      left: 0; }
+  #head-stack.stack-wrapper .stack-surface .center-content .top h3 {
+    color: #000;
+    margin-top: -10px;
+    font-size: 43px;
+    font-family: 'signikabold'; }
+  #head-stack.stack-wrapper .stack-surface .center-content .middle {
+    margin-top: -20px; }
+    #head-stack.stack-wrapper .stack-surface .center-content .middle h2 {
+      font-size: 49px;
+      margin-bottom: 10px;
+      font-family: 'signikalight';
+      color: #000;
+      font-weight: normal; }
+    #head-stack.stack-wrapper .stack-surface .center-content .middle p {
+      max-width: 703px;
+      font-size: 22px;
+      font-family: 'signikalight';
+      color: #000;
+      font-weight: normal; }
+  #head-stack.stack-wrapper .stack-surface .center-content .bottom img {
+    width: 60px; }
 
 #project-zoo.slider {
   font-family: 'AvN-Regular';
@@ -526,51 +499,96 @@ html {
         margin-bottom: -4px;
         width: 100%; }
 
+#links.stack-wrapper {
+  height: 100px;
+  background: #02a3ea;
+  background-image: url("../Files/Design/Photos/links-background.png");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: center;
+  background-size: cover; }
+  #links.stack-wrapper .center-content {
+    flex-flow: initial; }
+    #links.stack-wrapper .center-content img {
+      width: 70px;
+      margin: 0 6px; }
+
 #footer.stack-wrapper {
-  height: 600px; }
-  #footer.stack-wrapper .stack-surface .center-content h1 {
-    color: #fff;
-    font-family: 'butlerblack'; }
-  #footer.stack-wrapper .stack-surface .center-content .contact-form {
-    width: 700px;
-    padding: 20px; }
-    #footer.stack-wrapper .stack-surface .center-content .contact-form #text-top {
-      display: flex;
-      justify-content: space-between; }
-      #footer.stack-wrapper .stack-surface .center-content .contact-form #text-top .field-container {
-        width: 46.5%; }
-    #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container {
-      margin-bottom: 20px;
-      width: 100%; }
-      #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container ::-webkit-input-placeholder {
-        color: #1a2326; }
-      #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container :-moz-placeholder {
-        color: #202c30; }
-      #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container :-ms-placeholder {
-        color: #202c30; }
-      #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container .input {
-        width: 100%;
-        margin: 0;
-        padding: 13px;
-        border: none;
-        background: #273638;
-        font-size: 25px;
-        color: #fff;
-        font-family: 'CasRegular'; }
-      #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container textarea {
-        resize: none;
-        height: 225px; }
-    #footer.stack-wrapper .stack-surface .center-content .contact-form .send-button input[type=submit] {
-      display: block;
-      background: #55c958;
-      border: none;
+  height: initial;
+  background: #000; }
+  #footer.stack-wrapper .stack-surface {
+    position: initial; }
+    #footer.stack-wrapper .stack-surface .center-content h1 {
       color: #fff;
-      font-size: 23px;
-      padding: 10px 15px;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-family: 'CasRegular'; }
+      font-family: 'signikalight';
+      font-weight: normal;
+      font-size: 21px;
+      margin-bottom: 15px; }
+    #footer.stack-wrapper .stack-surface .center-content p {
+      color: #fff;
+      font-family: 'signikasemibold';
+      font-weight: normal;
+      font-size: 34px;
+      max-width: 825px;
+      margin-bottom: 60px; }
+    #footer.stack-wrapper .stack-surface .center-content .contact-form {
+      width: 980px; }
+      #footer.stack-wrapper .stack-surface .center-content .contact-form #text-top {
+        display: flex;
+        justify-content: space-between; }
+        #footer.stack-wrapper .stack-surface .center-content .contact-form #text-top .field-container {
+          width: 48.5%; }
+      #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container {
+        margin-bottom: 25px;
+        width: 100%; }
+        #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container ::-webkit-input-placeholder {
+          color: #fff;
+          opacity: 0.125; }
+        #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container :-moz-placeholder {
+          color: #fff;
+          opacity: 0.125; }
+        #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container :-ms-placeholder {
+          color: #fff;
+          opacity: 0.125; }
+        #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container .input {
+          width: 100%;
+          margin: 0;
+          padding: 13px;
+          border: none;
+          background: rgba(255, 255, 255, 0.125);
+          font-size: 25px;
+          color: #fff;
+          font-family: 'signikalight';
+          font-weight: normal;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+        #footer.stack-wrapper .stack-surface .center-content .contact-form .field-container textarea {
+          resize: none;
+          height: 120px; }
+      #footer.stack-wrapper .stack-surface .center-content .contact-form .form-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #footer.stack-wrapper .stack-surface .center-content .contact-form .form-bottom img {
+          width: 60px; }
+        #footer.stack-wrapper .stack-surface .center-content .contact-form .form-bottom input[type=submit] {
+          display: block;
+          background: #02a3ea;
+          background-image: url("../Files/Design/Photos/send-button-background.png");
+          background-repeat: no-repeat;
+          background-attachment: local;
+          background-position: center;
+          background-size: 165%;
+          border: none;
+          color: #fff;
+          font-size: 37px;
+          padding: 5px 15px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-family: 'signikabold';
+          font-weight: normal; }
 
 /*# sourceMappingURL=Styles.css.map */

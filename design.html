@@ -1,5 +1,5 @@
 ---
-permalink: /design
+<!-- permalink: /design -->
 ---
 <!doctype html>
 <html>
@@ -19,23 +19,25 @@ permalink: /design
 		<!-- ### Head Stack #################################### -->
 		<div class="stack-wrapper" id="head-stack">
 			<div class="stack-overlay">
-				<div class="left-content">
-					<img src="Files/Design/Photos/Left-Drips.png">
-					<div class="fill-rest"><!--Nothing--></div>
+				<div id="head-stack-top">
+					<!-- empty -->
 				</div>
-				<div class="center-content"></div>
 				<div class="right-content">
-					<img src="Files/Design/Photos/Right-Drips.png">
-					<div class="fill-rest"><!--Nothing--></div>
+					<img src="Files/Design/Photos/head-stack-right.png">
 				</div>
 			</div>
 			<div class="stack-surface">
-				<div class="center-content">
-					<h1>Dylan Kuzelka</h1>
-					<p>I have a desire to be surrounded by beautiful things and an impulse to create them. Beautiful means something different to each of us. Beautiful music puts you in a state of mind boundless in scope, leaving you to explore the most abstract of ideas. Beautiful landscapes give you the will to venture into unknown territories and face your fears of adventure. Beautiful design changes the way people perceive a product or idea. It can improve the taste of food, it can start a movement, and it can change people.</p>
-					<hr>
-					<div id="triangle"></div>
-					<img src="Files/Design/Photos/Logo-Small.png">
+				<div class="center-content text-content">
+					<div class='top'>
+						<h3>Dylan Kuzelka</h3>
+					</div>
+					<div class='middle'>
+						<h2>I am a web designer and frontend developer.</h2>
+						<p>I have a desire to be surrounded by beautiful things and an impulse to create them. Beautiful means something different to each of us. Beautiful music puts you in a state of mind boundless in scope, leaving you to explore the most abstract of ideas. Beautiful landscapes give you the will to venture into unknown territories and face your fears of adventure. Beautiful design changes the way people perceive a product or idea. It can improve the taste of food, it can start a movement, and it can change people.</p>
+					</div>
+					<div class='bottom'>
+						<img src="Files/Design/Photos/Logo-Small-Tiedye.png">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -509,26 +511,39 @@ permalink: /design
 			</div>
 		</div>
 
-		<!-- ### Head Stack #################################### -->
+		<!-- ### Links #################################### -->
+		<div class="stack-wrapper" id="links">
+			<div class="stack-surface">
+				<div class="center-content">
+					<a href="https://www.instagram.com/dylan_kuzelka/"><img src="Files/Design/Photos/icon-instagram.png"></a>
+					<a href="https://dribbble.com/dylankuzelka"><img src="Files/Design/Photos/icon-dribbble.png"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- ### Footer #################################### -->
 		<div class="stack-wrapper" id="footer">
 			
 			<div class="stack-surface">
-				<div class="center-content">
-					<h1>Contact</h1>
+				<div class="center-content text-content">
+					<h1>Get In Touch</h1>
+					<p>If you like my work and think we should tackle a project together, or you just want to share an awesome song you found with me, drop me a line.</p>
 
 					<form action='https://formspree.io/dkuz001@gmail.com' method='post' class='contact-form'>
 						<div id='text-top'> 
 							<div class='field-container'>
-								<input type='text' class='input' name='name' placeholder='Name'>
+								<input type='text' class='input' name='name' placeholder='name'>
 							</div>
 							<div class='field-container'>
-								<input type='text' class='input' name='email' placeholder='Email'>
+								<input type='text' class='input' name='email' placeholder='email'>
 							</div>
 						</div>
 						<div class='field-container'>
-							<textarea class='input text-area' name='message' placeholder='Your Message'></textarea>
+							<textarea class='input text-area' name='message' placeholder='message'></textarea>
 						</div>
-						<div class='send-button'>
+
+						<div class='form-bottom'>
+							<img src="Files/Design/Photos/Logo-Small-Tiedye.png">
 							<input type='submit' value='Send'>
 						</div>
 					</form>
