@@ -524,6 +524,14 @@ html {
       font-weight: normal;
       font-size: 21px;
       margin-bottom: 15px; }
+    #footer.stack-wrapper .stack-surface .center-content h5 {
+      color: #fff;
+      font-family: 'signikalight';
+      font-weight: normal;
+      position: absolute;
+      bottom: 25px;
+      right: 50%;
+      transform: translateX(50%); }
     #footer.stack-wrapper .stack-surface .center-content p {
       color: #fff;
       font-family: 'signikasemibold';
